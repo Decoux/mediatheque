@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+app-root{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+app-home-page, app-product-page, app-not-found{
+    flex: 1;
+}

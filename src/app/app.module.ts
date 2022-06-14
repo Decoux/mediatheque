@@ -8,7 +8,10 @@ import { NavBarComponent } from './_commons/nav-bar/nav-bar.component';
 import { NotFoundComponent } from './_commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import {ButtonModule} from 'primeng/button';
 
+import {MenubarModule} from 'primeng/menubar';
+import {CardModule} from 'primeng/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,10 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    MenubarModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
