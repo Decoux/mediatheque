@@ -8,6 +8,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavBarComponent implements OnInit {
   items: MenuItem[] = [];
+  activeItem: MenuItem =  this.items[0];
   constructor() { }
 
  
@@ -19,9 +20,12 @@ export class NavBarComponent implements OnInit {
           },
           {
             label:'Home',
+            url: "home"
           }, 
           {
             label:'Products',
+            url: "products"
+
           }       
       ]
     }

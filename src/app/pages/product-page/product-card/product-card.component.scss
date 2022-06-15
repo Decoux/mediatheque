@@ -1,0 +1,56 @@
+.card{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    .container-left{
+        width: 50%;
+        padding-right: 20px;
+        line-height: 24px;
+        .artiste, .real {
+
+        }
+        .annee{
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+        }
+       
+    }
+    .container-right{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .container-img{
+            height: 400px;
+            width: 320px;
+            margin: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+   
+  
+  
+
+   
+}
+
+// .synopsis{
+//     display: none;
+// }
+
+// #card:hover .container-img{
+//    display: none;
+// }
+
+// #card:hover .synopsis{
+//     display: block;
+//  }
