@@ -1,4 +1,10 @@
-<div class="container-cards">
+<div class="container">
+    <div class="header-list">
+        <h1 *ngIf="data[0].real; else albumTpl">Films</h1>
+        <ng-template #albumTpl><h1>Albums</h1></ng-template>
+    </div>
+    <div class="container-cards">
 
-    <app-product-card *ngFor="let item of data" [data]="item"></app-product-card>
+        <app-product-card *ngFor="let item of data" [data]="item"></app-product-card>
+    </div>
 </div>
