@@ -1,0 +1,45 @@
+<!-- <div id="card" *ngIf="data.synopsis">
+    <p-card header="{{data.nom}}" subheader="{{data.real}} {{data.annee}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+ 
+        <div class="container-img" *ngIf="data.img">
+            <img alt="data.img" [src]="data.img">
+        </div>
+        <p [className]="(data.img) ? 'synopsis' : ''">{{data.synopsis}}</p>
+    </p-card>
+</div>
+
+<div id="card" *ngIf="data.artiste">
+    <p-card header="{{data.nom}}" subheader="{{data.artiste}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+ 
+        <div class="container-img" *ngIf="data.img">
+            <img alt="data.img" [src]="data.img">
+        </div>
+        <p [className]="(data.img) ? 'synopsis' : ''">{{data.synopsis}}</p>
+    </p-card>
+</div> -->
+
+<div class="card">
+    
+    <div class="container-right">
+       
+        <div class="container-img">
+            <img *ngIf="data.img; else imgTpl" alt="data.img" [src]="data.img">
+            
+            <ng-template #imgTpl><img alt="no-data" [src]="noPicture"></ng-template>
+        </div>
+    </div>
+    <div  class="container-left">
+        <div class="header-card">
+            <p class="title">{{data.nom}}</p>
+            <p *ngIf="data.artiste">
+                <span class="artist">{{data.artiste}}</span><span class="annee">{{data.annee}}</span>
+            </p>
+            <p *ngIf="data.real">
+                <span class="real">{{data.real}}</span><span  class="annee">{{data.annee}}</span>
+            </p>
+        </div>
+        <p [className]="(data.img) ? 'synopsis' : ''">{{data.synopsis}}</p>
+    </div>
+    
+
+</div>

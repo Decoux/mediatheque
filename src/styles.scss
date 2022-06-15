@@ -21,3 +21,19 @@ app-root{
 app-home-page, app-product-page, app-not-found{
     flex: 1;
 }
+
+app-product-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+app-product-list{
+    margin: 20px;
+    background-color: #F5f5f5;
+}
+
+.p-card-content{
+    height: 390px;
+}
